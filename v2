@@ -1,1 +1,22 @@
 loadstring(game:HttpGet("https://pastefy.app/9Tiwmk1o/raw"))()
+local VirtualInputManager = game:GetService("VirtualInputManager")
+
+VirtualInputManager:SendMouseButtonEvent(
+    500, 222, -- u need to found ProximityPrompt position of screen
+    0,      
+    true,   
+    nil,    
+    false   
+)
+
+
+task.wait(0.8)
+
+
+VirtualInputManager:SendMouseButtonEvent(
+    500, 222, -- u need to found ProximityPrompt position of screen
+    0,
+    false,
+    nil,
+    false
+)
